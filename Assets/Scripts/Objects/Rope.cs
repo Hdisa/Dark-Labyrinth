@@ -13,6 +13,6 @@ public class Rope : MonoBehaviour
     }
     private void Die()
     {
-        OnDeadReloadScene.onDead?.Invoke("ловушка веревка");
+        RockTrap.onRopeTouched?.Invoke();
     }
 }
