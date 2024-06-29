@@ -37,6 +37,10 @@ public class Laser : MonoBehaviour
                 target.Hit();
                 OnHitTarget?.Invoke();
             }
+            if (rayHit.collider.CompareTag("Player"))
+            {
+                OnDeadReloadScene.onDead?.Invoke("Лазер");
+            }
         }
         else
         {
