@@ -5,11 +5,6 @@ public class CameraController : MonoBehaviour
     public float maxYAngle = 80.0f;
     public float rotationX;
 
-    private void Start()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-    }
-
     void Update()
     {
         var mouseX = Input.GetAxis("Mouse X");
