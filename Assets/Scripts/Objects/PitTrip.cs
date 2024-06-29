@@ -1,6 +1,9 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class Rope : MonoBehaviour
+public class PitTrip : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
@@ -8,11 +11,9 @@ public class Rope : MonoBehaviour
         {
             Die();
         }
-        
-        
     }
     private void Die()
     {
-        OnDeadReloadScene.onDead?.Invoke("ловушка веревка");
+        OnDeadReloadScene.onDead?.Invoke("ловушка яма");
     }
 }

@@ -1,9 +1,9 @@
 using UnityEngine;
 public class CameraController : MonoBehaviour
 {
-    public float sensitivity = 2.0f;
-    public float maxYAngle = 80.0f;
-    public float rotationX;
+    [SerializeField] private float sensitivity = 2.0f;
+    [SerializeField] private float maxYAngle = 80.0f;
+    private float rotationX;
 
     private void Start()
     {
