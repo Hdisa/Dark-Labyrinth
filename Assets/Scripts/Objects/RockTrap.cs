@@ -30,7 +30,7 @@ public class RockTrap : MonoBehaviour
     }
     private void Die()
     {
-        OnDeadReloadScene.onDead?.Invoke("ловушка веревка камень");
+        OnDeadReloadScene.onDead?.Invoke("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ");
     }
     // Update is called once per frame
     void ActivateCutScene()

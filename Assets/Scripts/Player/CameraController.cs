@@ -1,22 +1,28 @@
 using UnityEngine;
+
 public class CameraController : MonoBehaviour
 {
+
     [SerializeField] private float sensitivity = 2.0f;
     [SerializeField] private float maxYAngle = 80.0f;
     private float rotationX;
     private bool canRotate = true;
+    
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
     }
+    
     private void OnEnable()
     {
         RockTrap.onRopeTouched += ActivateRopeTrapCutScene;
     }
+    
     private void OnDisable()
     {
         RockTrap.onRopeTouched -= ActivateRopeTrapCutScene;
     }
+    
     void Update()
     {
         if (canRotate)
@@ -31,6 +37,7 @@ public class CameraController : MonoBehaviour
             transform.parent.Rotate(Vector3.up * (mouseX * sensitivity));
         }
     }
+    
     void ActivateRopeTrapCutScene()
     {
         canRotate = false;
