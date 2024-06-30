@@ -2,13 +2,17 @@ using UnityEngine;
 
 public class Rope : MonoBehaviour
 {
-    [SerializeField] private RockTrap rock;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            var rb = rock.GetComponent<Rigidbody>();
-            rb.useGravity = true;
+            Die();
         }
+        
+        
+    }
+    private void Die()
+    {
+        RockTrap.onRopeTouched?.Invoke();
     }
 }
