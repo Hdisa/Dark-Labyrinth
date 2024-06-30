@@ -1,17 +1,16 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RopeTrapCameraController : MonoBehaviour
 {
-    private bool isStarted = false;
+    private bool isStarted;
     public static Action RopeTripCameraControl;
-    // Start is called before the first frame update
+    
     private void OnEnable()
     {
         RopeTripCameraControl += ActivateRopeTrapCutScene;
     }
+    
     private void OnDisable()
     {
         RopeTripCameraControl -= ActivateRopeTrapCutScene;
@@ -25,6 +24,7 @@ public class RopeTrapCameraController : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, .05f);
         }
     }
+    
     void ActivateRopeTrapCutScene()
     {
         isStarted = true;

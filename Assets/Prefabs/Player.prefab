@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3974190927503483859}
   - component: {fileID: 2480591447118555767}
   - component: {fileID: 5240598672420915205}
+  - component: {fileID: 3742898462192339119}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -153,7 +154,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sensitivity: 2
   maxYAngle: 80
-  rotationX: 0
 --- !u!114 &5240598672420915205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,6 +168,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupDistance: 2
   holdPosition: {fileID: 7878081140300883137}
+--- !u!114 &3742898462192339119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19222079910706347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ae985c05ff2a694d9ef0518f2912dee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3978031528143396208
 GameObject:
   m_ObjectHideFlags: 0
