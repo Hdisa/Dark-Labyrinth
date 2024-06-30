@@ -12,4 +12,4 @@ Obi-Wanya - 3D-художник
 
 Pewter - программист, Unity-разработчик
 
-Riniax - 3D-дизайнер
+Riniax - 3D-художник
